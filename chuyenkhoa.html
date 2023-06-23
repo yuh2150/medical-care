@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Medical Care</title>
+    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/style-chuyenkhoa.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/js/chuyenkhoa.js">
+    <link rel="stylesheet" href="./vendor/responsive/chuyenkhoa_res.css">
+</head>
+<body style="overflow-x: hidden;">
+    <header class="header ">
+        <div class="nav-bar" >
+             <div class="logo">
+                <img src=".\assets\img\logo.png" alt="">
+             </div>
+             <div class="list-item" id="myTopnav">
+                <div class="item"><a href="index.html" >Trang chủ</a> </div>
+                <div class="item"><a href="tintuc.html">Tin tức</a></div>
+                <div class="item"><a href="chuyenkhoa.html"class="item-current">Chuyên khoa</a></div>
+                <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
+                <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
+                <div class="item"><a href="dichvu.html">Dịch vụ</a></div>
+                <div class="item"><a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a></div>
+            </div>
+             <div class="nav-overlay" id="overlay">
+             </div>
+            <a href="javascript:void(0);" class="icon " onclick="narBar()" >
+                <i class="fa-solid fa-bars "></i>
+            </a>
+        </div>
+    </header>
+    <iframe src="./dangki.html" class="form-none" id="form-block"></iframe>
+    <main>
+        <div class="link"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- <p><a href="index.html">Trang chủ</a><span class=""> &gt; </span><span class="">Danh sách chuyên khoa</span></p>                   -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="care-service-top" style="margin-top: 80px;">
+            <div class="care-service-banner">
+                <div class="top-care-service-content">
+                        <div class="inner">
+                            <div class="doctor-list-title">
+                                <h1 class="title">Đội ngũ Bác sĩ ưu tú <span class="text-nowrap">từ các</span> Bệnh viện <span class="text-nowrap"> hàng đầu</span></h1>
+                            </div>
+                            <p class="doctor-list-info">Đội ngũ Bác sĩ ưu tú với thâm niên trung bình 10 năm kinh nghiệm hiện công tác tại các Bệnh viện hàng đầu Việt Nam, thăm khám trên nhiều chuyên khoa đa dạng, tận tâm chăm sóc bạn cùng gia đình.
+        
+                            </p>
+                        </div>
+                    </div>
+                
+                <div class="banner-image">
+                    <div class="d-xl-block">
+                        <img class="layer-1" src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/banner.svg">
+                        <img class="layer-2" src="./assets/img/chung-toi-theo-duoi.png">
+                        <img class="layer-3" src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/doctor-profile/doctor-list-banner-3-dt.svg">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class=" head text-center">
+            <div class="ball lagre"></div>
+            <h1 class="my-5">Danh sách chuyên khoa</h1>
+            <div class="separator-purple"></div>
+        </div>
+        <div class="chuyen-khoa">
+            <div class="container">
+                <div class="nav-links">
+                    <div class=" tab-content tab-content--slider">
+                      <div class="tab-pane">
+                        <div class="tab-info">
+                            <div class="cac-khoa">
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="	https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_ivf.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Trung tâm Hỗ trợ sinh sản</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2022/12/icon-khoa-ngoai-vu-2023.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa ngoại vú</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/11/icon-tieuhoa.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Trung tâm Nội soi <br>Phẫu thuật nội soi tiêu Hóa</h2></h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2022/02/logo-tieu-hoa-gan-mat-f.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa Tiêu hóa – Gan mật – Tụy</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noitimmach.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM TIM MẠCH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noithankinh.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM THẦN KINH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noitiet.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa Nội tiết – <br>Đái tháo đường</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2021/03/khoa-noi-co-xuong-khop.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA CƠ XƯƠNG KHỚP</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2021/03/khoa-tai-mui-hong.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA TAI MŨI HỌNG</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_cthuong_chinhhinh.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM CHẤN THƯƠNG CHỈNH HÌNH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_sanphukhoa.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM SẢN PHỤ KHOA</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class="item-box ">
+                                        <div class="info-khoa my-3 my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2023/04/khoa-da-lieu.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA DA LIỄU – THẪM MỸ DA</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                      <div class="tab-pane">
+                        <div class="tab-info">
+                            <div class="cac-khoa">
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="	https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_ivf.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Trung tâm Hỗ trợ sinh sản</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2022/12/icon-khoa-ngoai-vu-2023.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa ngoại vú</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/11/icon-tieuhoa.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Trung tâm Nội soi <br>Phẫu thuật nội soi tiêu Hóa</h2></h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2022/02/logo-tieu-hoa-gan-mat-f.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa Tiêu hóa – Gan mật – Tụy</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noitimmach.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM TIM MẠCH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noithankinh.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM THẦN KINH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_noitiet.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">Khoa Nội tiết – <br>Đái tháo đường</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2021/03/khoa-noi-co-xuong-khop.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA CƠ XƯƠNG KHỚP</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2021/03/khoa-tai-mui-hong.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA TAI MŨI HỌNG</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_cthuong_chinhhinh.png"></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM CHẤN THƯƠNG CHỈNH HÌNH</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class=" item-box">
+                                        <div class="info-khoa my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa_sanphukhoa.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">TRUNG TÂM SẢN PHỤ KHOA</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khoa-item bg-white text-center">
+                                    <div class="item-box ">
+                                        <div class="info-khoa my-3 my-3">
+                                            <a href="">
+                                                <div class="icon-khoa div-icon">
+                                                    <img class="img-khoa" src="https://tamanhhospital.vn/wp-content/uploads/2023/04/khoa-da-lieu.png
+                                                    "></div>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="">KHOA DA LIỄU – THẪM MỸ DA</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane">
+                        <div class="tab-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="pagination justify-content-center nav-tabs--slider">
+                        <li class="page-item"><a class="page-link text-center" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-center" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-center" href="#">3</a></li>
+                    </ul>
+                </div>                              
+            </div>
+        </div>        
+    </main>
+    <footer id="Footer"  class="page-footer font-small stylish-color-dark pt-4">
+        <div  class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <!-- Content -->
+                    <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">medical care</h5>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p class="text-white">470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da Nang City, Vietnam</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">CS1:</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">CS2:</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">CS3:</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">CS4:</a>
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">Cookie Policy</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none text-info" href="#!">Terms of use </a>
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase text-white font-weight-bold">Contact Us</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                    <p class="text-white">
+                        <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Social buttons -->
+        <div class="hover-effect1">
+            <ul  class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#." title="Github"><i class="fa fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div  class="footer-copyright text-center py-3">
+        </div>
+    </footer>
+    <script src="./assets/js/chuyenkhoa.js"> </script>
+    <script src="./assets/js/nav-bar.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    
+</body>
+</html>
