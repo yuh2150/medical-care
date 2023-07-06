@@ -1,68 +1,102 @@
 <!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="./assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
     <title>Medical Care</title>
-    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4d0b4c932e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./vendor/responsive/index_res.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./vendor/responsive/index_res.css" />
+  </head>
 
-</head>
-
-<body style="overflow-x: hidden;">
-    <header class="header ">
-        <div class="nav-bar">
-            <div class="logo">
-                <img src=".\assets\img\logo.png" alt="">
-            </div>
-            <div class="list-item" id="myTopnav">
-                <div class="item"><a href="index.html" class="item-current">Trang chủ</a> </div>
-                <div class="item"><a href="tintuc.html">Tin tức</a></div>
-                <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
-                <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
-                <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
-                <div class="item"><a href="dichvu.html">Dịch vụ</a></div>
-                <div class="item"><a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a></div>
-            </div>
-            <div class="nav-overlay" id="overlay">
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="narBar()">
-                <i class="fa-solid fa-bars "></i>
-            </a>
+  <body style="overflow-x: hidden">
+    <header class="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src=".\assets\img\logo.png" alt="" />
         </div>
+        <div class="list-item" id="myTopnav">
+          <div class="item">
+            <a href="index.html" class="item-current">Trang chủ</a>
+          </div>
+          <div class="item"><a href="tintuc.html">Tin tức</a></div>
+          <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
+          <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
+          <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
+          <div class="item"><a href="dichvu.html">Dịch vụ</a></div>
+          <div class="item">
+            <a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a>
+          </div>
+        </div>
+        <div class="nav-overlay" id="overlay"></div>
+        <a href="javascript:void(0);" class="icon" onclick="narBar()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
     </header>
     <iframe src="./dangki.html" class="form-none" id="form-block"></iframe>
     <main>
-        <div class="intro-bg"
-            style="background-image: url(https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80)">
-            <div>
-                <div class="intro">
-                    <div class="intro-area">
-                        <h1>Nền tảng y tế <br><b>chăm sóc sức khỏe toàn diện</b></h1><br>
-                        <div class="input-group mb-4">
-                            <span class="input-group-text icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" name="search" placeholder="">
-                            <span class="input-group-text search"><a href="">Search</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="luachon">
+      <div
+        class="intro-bg"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+        "
+      >
+        <div>
+          <div class="intro">
+            <div class="intro-area">
+              <h1>Nền tảng y tế <br /><b>chăm sóc sức khỏe toàn diện</b></h1>
+              <br />
+              <div class="input-group mb-4">
+                <span class="input-group-text icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="search"
+                  placeholder=""
+                />
+                <span class="input-group-text search"
+                  ><a href="">Search</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="luachon"></div>
+          <!-- <div class="luachon">
                     <ul>
                         <li>
                             <a href="/#chuyenkhoa"><img src="assets\img\hospital-building.png" alt=""> <br>
@@ -100,513 +134,656 @@
                                 khỏe </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
+        </div>
+      </div>
+
+      <div class="chuyenkhoa">
+        <div class="container">
+          <h1 class="my-5">Chuyên khoa phổ biến</h1>
+          <div class="separator-purple"></div>
+          <div class="chuyenkhoa-slide">
+            <div class="chuyenkhoa-item">
+              <a href="">
+                <img
+                  src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120331-co-xuong-khop.jpg"
+                  alt=""
+                />
+                <h3>Khoa cơ xương khớp</h3>
+              </a>
             </div>
+            <div class="chuyenkhoa-item">
+              <img
+                src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/121042-than-kinh.jpg"
+                alt=""
+              />
+              <h3>Khoa thần kinh</h3>
+            </div>
+            <div class="chuyenkhoa-item">
+              <img
+                src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120933-tieu-hoa.jpg
+                        "
+                alt=""
+              />
+              <h3>Khoa tiêu hóa</h3>
+            </div>
+            <div class="chuyenkhoa-item">
+              <img
+                src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120741-tim-mach.jpg"
+                alt=""
+              />
+              <h3>Khoa tim mạch</h3>
+            </div>
+            <div class="chuyenkhoa-item">
+              <img
+                src="	https://cdn.bookingcare.vn/fr/w300/2019/12/13/121146-tai-mui-hong.jpg"
+                alt=""
+              />
+              <h3>Khoa tai mũi họng</h3>
+            </div>
+            <div class="chuyenkhoa-item">
+              <img
+                src="	https://cdn.bookingcare.vn/fr/w300/2019/12/16/175809-da-lieu.jpg"
+                alt=""
+              />
+              <h3>Khoa da liễu</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="giaiphap">
+        <img
+          src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/for-press/health-resources-bg.svg
+                "
+          alt=""
+          class="bg"
+        />
+        <div class="container">
+          <h1 class="my-5">Các bước dễ dàng cho giải pháp của bạn</h1>
+          <div class="separator-purple"></div>
+          <div class="row list-card">
+            <div class="card my-3" style="width: 19rem">
+              <img
+                src="./assets/img/giaiphap1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 style="font-size: 22px">Tìm bác sĩ</h3>
+                  <p style="text-align: justify">
+                    Nghiên cứu và tìm hiểu về các bác sĩ hoặc chuyên gia trong
+                    lĩnh vực liên quan đến vấn đề sức khỏe của bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3" style="width: 19rem">
+              <img
+                src="./assets/img/giaiphap2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 style="font-size: 22px">Yêu cầu tư vấn</h3>
+                  <p style="text-align: justify">
+                    Liên hệ với bác sĩ hoặc phòng khám để yêu cầu tư vấn.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3" style="width: 19rem">
+              <img
+                src="./assets/img/giaiphap3.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 style="font-size: 22px">Đặt lịch hẹn</h3>
+                  <p style="text-align: justify">
+                    Bạn có thể đặt lịch hẹn với bác sĩ hoặc phòng khám. Gọi điện
+                    thoại trực tiếp hoặc sử dụng hệ thống đặt lịch hẹn trực
+                    tuyến
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3" style="width: 19rem">
+              <img
+                src="./assets/img/giaiphap4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 style="font-size: 22px">Nhận được giải pháp</h3>
+                  <p style="text-align: justify">
+                    Bạn có thể nhận được chỉ đạo về thuốc, liệu pháp, phẫu thuật
+                    hoặc các biện pháp khác để giải quyết vấn đề sức khỏe của
+                    bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bacsi"
+        style="
+          background-image: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/newest-articles-background.svg);
+        "
+      >
+        <div class="container">
+          <h1 class="my-5 text-center">Bác sĩ nổi bật</h1>
+          <div class="separator-purple"></div>
+          <div class="row">
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2011/01/bac-pham-nguyen-vinh.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">PGS.TS.BS PHẠM NGUYỄN VINH</h5>
+                <p class="card-text">Giám đốc Trung tâm Tim mạch</p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2021/03/bs-nguyen-ba-my-nhi.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">BS.CKII NGUYỄN BÁ MỸ NHI</h5>
+                <p class="card-text">Giám đốc Trung tâm Sản phụ khoa</p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2023/03/bs-tran-phan-chung-thuy.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">PGS.TS.BS TRẦN PHAN CHUNG THỦY</h5>
+                <p class="card-text">Cố vấn chuyên môn khoa Tai Mũi Họng.</p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-tran-thi-thuy-hang.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">THS.BS.CKII TRẦN THỊ THÚY HẰNG</h5>
+                <p class="card-text">Trưởng khoa Khoa Tai mũi họng</p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">GS.TS.BS NGÔ QUÝ CHÂU</h5>
+                <p class="card-text">Phó Tổng Giám đốc chuyên môn</p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-6">
+              <img
+                src="https://tamanhhospital.vn/wp-content/uploads/2020/12/avatar-viet-tien-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">TTND.GS.TS NGUYỄN VIỆT TIẾN</h5>
+                <p class="card-text">
+                  Bác sĩ cao cấp khoa Chấn thương chỉnh hình
+                </p>
+                <div class="group-button">
+                  <a href="#" class="button-blue">Xem chi tiết</a>
+                  <a href="" class="button-purple">Đặt lịch hẹn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nhathuoc">
+        <div class="imgage-bg">
+          <img
+            src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/online-pharmacy-video-cover.svg"
+            alt=""
+          />
+        </div>
+        <div class="imgage-shipper">
+          <img src="./assets/img/shipper.png" alt="" />
         </div>
 
-
-        <div class="chuyenkhoa">
-            <div class="container">
-                <h1 class="my-5">
-                    Chuyên khoa phổ biến
-                </h1>
-                <div class="separator-purple"></div>
-                <div class="chuyenkhoa-slide">
-                    <div class="chuyenkhoa-item">
-                        <a href="">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120331-co-xuong-khop.jpg" alt="">
-                            <h3>Khoa cơ xương khớp</h3>
-                        </a>
-
-                    </div>
-                    <div class="chuyenkhoa-item">
-                        <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/121042-than-kinh.jpg" alt="">
-                        <h3>Khoa thần kinh</h3>
-                    </div>
-                    <div class="chuyenkhoa-item">
-                        <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120933-tieu-hoa.jpg
-                        " alt="">
-                        <h3>Khoa tiêu hóa</h3>
-                    </div>
-                    <div class="chuyenkhoa-item">
-                        <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/13/120741-tim-mach.jpg" alt="">
-                        <h3>Khoa tim mạch</h3>
-                    </div>
-                    <div class="chuyenkhoa-item">
-                        <img src="	https://cdn.bookingcare.vn/fr/w300/2019/12/13/121146-tai-mui-hong.jpg" alt="">
-                        <h3>Khoa tai mũi họng</h3>
-                    </div>
-                    <div class="chuyenkhoa-item">
-                        <img src="	https://cdn.bookingcare.vn/fr/w300/2019/12/16/175809-da-lieu.jpg" alt="">
-                        <h3>Khoa da liễu</h3>
-                    </div>
-                </div>
+        <div class="content">
+          <h2 class="my-3">Nhà Thuốc Trực Tuyến</h2>
+          <div class="thanhngang my-3"></div>
+          <p class="my-3">
+            Dễ dàng đặt trực tuyến thuốc và các sản phẩm chăm sóc sức khỏe chính
+            hãng với mức giá tiết kiệm
+          </p>
+          <div class="row my-4">
+            <div class="col">
+              <img
+                src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/icons/delivery-icon.svg"
+                alt=""
+              />
+              Giao hàng nhanh trong 2 giờ
             </div>
+            <div class="col">
+              <img
+                src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/icons/discount-icon.svg"
+                alt=""
+              />
+              Tiết kiệm 20% tất cả các sản phẩm
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center" class="my-5">
+            <button class="button-green" style="width: 150px; height: 50px">
+              Xem ngay
+            </button>
+          </div>
         </div>
-        <div class="giaiphap">
-            <img src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/for-press/health-resources-bg.svg
-                " alt="" class="bg">
-            <div class="container">
-                <h1 class="my-5">
-                    Các bước dễ dàng cho giải pháp của bạn
-                </h1>
-                <div class="separator-purple"></div>
-                <div class=" row list-card">
-                    <div class="card my-3" style="width: 19rem;">
-                        <img src="./assets/img/giaiphap1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3 style="font-size: 22px;">Tìm bác sĩ</h3>
-                                <p style="text-align: justify;">Nghiên cứu và tìm hiểu về các bác sĩ hoặc chuyên gia
-                                    trong lĩnh vực liên quan đến vấn đề sức khỏe của bạn.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card my-3" style="width: 19rem;">
-                        <img src="./assets/img/giaiphap2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3 style="font-size: 22px;">Yêu cầu tư vấn</h3>
-                                <p style="text-align: justify;">Liên hệ với bác sĩ hoặc phòng khám để yêu cầu tư vấn.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card my-3" style="width: 19rem;">
-                        <img src="./assets/img/giaiphap3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3 style="font-size: 22px;">Đặt lịch hẹn</h3>
-                                <p style="text-align: justify;">Bạn có thể đặt lịch hẹn với bác sĩ hoặc phòng khám. Gọi
-                                    điện thoại trực tiếp hoặc sử dụng hệ thống đặt lịch hẹn trực tuyến</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card my-3" style="width: 19rem;">
-                        <img src="./assets/img/giaiphap4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3 style="font-size: 22px;">Nhận được giải pháp</h3>
-                                <p style="text-align: justify;">Bạn có thể nhận được chỉ đạo về thuốc, liệu pháp, phẫu
-                                    thuật hoặc các biện pháp khác để giải quyết vấn đề sức khỏe của bạn.</p>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div class="trainghiem">
+        <div class="container">
+          <h1 class="text-center my-5">Trải nghiệm khách hàng</h1>
+          <div class="separator-purple"></div>
+          <div class="trainghiem-list">
+            <div class="trainghiem__col">
+              <div class="trainghiem__item">
+                <div class="trainghiem__cont">
+                  <h3 class="trainghiem__name">
+                    Tôi đã chữa khỏi mỡ máu như thế nào?
+                  </h3>
+                  <p class="p1">anh Huy - GĐ công ty xây dựng</p>
+                  <p class="p2">
+                    Tôi là giám đốc, thường xuyên phải đi liên hoan với đối tác.
+                    Các bữa ăn có rất nhiều thịt thà, đồ ăn giàu chất béo, lại
+                    còn phải uống…
+                  </p>
+                  <div class="iconLeft">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="iconRight">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
                 </div>
+                <div class="trainghiem__avatar">
+                  <img
+                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/Khach-hang-phan-binh-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
+            <div class="trainghiem__col">
+              <div class="trainghiem__item">
+                <div class="trainghiem__cont">
+                  <h3 class="trainghiem__name">
+                    Việc chăm con đã trở nên dễ dàng hơn
+                  </h3>
+                  <p class="p1">chị Huyền - nội trợ</p>
+                  <p class="p2">
+                    Là một bà mẹ trẻ, tôi luôn lo lắng và muốn đảm bảo sức khỏe
+                    tốt nhất cho bé sơ sinh của mình. Tuy nhiên, tôi gặp khá
+                    nhiều khó khăn...
+                  </p>
+                  <div class="iconLeft">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="iconRight">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+                <div class="trainghiem__avatar">
+                  <img
+                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-thanh-huyen-56-tuoi-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="trainghiem__col">
+              <div class="trainghiem__item">
+                <div class="trainghiem__cont">
+                  <h3 class="trainghiem__name">
+                    Căng thẳng mệt mỏi vì công việc đã giảm
+                  </h3>
+                  <p class="p1">anh Hùng - nhân viên văn phòng</p>
+                  <p class="p2">
+                    Tôi là giám đốc, thường xuyên phải đi liên hoan với đối tác.
+                    Các bữa ăn có rất nhiều thịt thà, đồ ăn giàu chất béo, lại
+                    còn phải uống…
+                  </p>
+                  <div class="iconLeft">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="iconRight">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+                <div class="trainghiem__avatar">
+                  <img
+                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-hoang-nam-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="trainghiem__col">
+              <div class="trainghiem__item">
+                <div class="trainghiem__cont">
+                  <h3 class="trainghiem__name">
+                    Tìm ra giải pháp cho vấn đề tiểu đường
+                  </h3>
+                  <p class="p1">anh Minh - kĩ sư phần mềm</p>
+                  <p class="p2">
+                    Với công việc áp lực và lối sống không lành mạnh, tôi đã bị
+                    mắc bệnh tiểu đường. Tôi đã tìm đến trang web tư vấn y tế và
+                    rất vui khi...
+                  </p>
+                  <div class="iconLeft">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="iconRight">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+                <div class="trainghiem__avatar">
+                  <img
+                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-tran-quang-65-tuoi-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="trainghiem__col">
+              <div class="trainghiem__item">
+                <div class="trainghiem__cont">
+                  <h3 class="trainghiem__name">
+                    Thông tin y tế chính xác và đáng tin cậy
+                  </h3>
+                  <p class="p1">anh Linh - sinh viên y khoa</p>
+                  <p class="p2">
+                    Là một sinh viên y khoa, việc tìm kiếm thông tin y tế chính
+                    xác và đáng tin cậy là rất quan trọng đối với tôi. Trang web
+                    tư vấn y tế đã giúp tôi có được những kiến...
+                  </p>
+                  <div class="iconLeft">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="iconRight">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+                <div class="trainghiem__avatar">
+                  <img
+                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-hoang-nam-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bacsi"
-            style="background-image: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/newest-articles-background.svg);">
-            <div class="container">
-                <h1 class="my-5 text-center">Bác sĩ nổi bật</h1>
-                <div class="separator-purple"></div>
-                <div class="row">
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2011/01/bac-pham-nguyen-vinh.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PGS.TS.BS PHẠM NGUYỄN VINH</h5>
-                            <p class="card-text">Giám đốc Trung tâm Tim mạch</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2021/03/bs-nguyen-ba-my-nhi.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">BS.CKII NGUYỄN BÁ MỸ NHI</h5>
-                            <p class="card-text">Giám đốc Trung tâm Sản phụ khoa</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2023/03/bs-tran-phan-chung-thuy.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PGS.TS.BS TRẦN PHAN CHUNG THỦY</h5>
-                            <p class="card-text">Cố vấn chuyên môn khoa Tai Mũi Họng.</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-tran-thi-thuy-hang.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">THS.BS.CKII TRẦN THỊ THÚY HẰNG</h5>
-                            <p class="card-text">Trưởng khoa Khoa Tai mũi họng</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">GS.TS.BS NGÔ QUÝ CHÂU</h5>
-                            <p class="card-text">Phó Tổng Giám đốc chuyên môn</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-6">
-                        <img src="https://tamanhhospital.vn/wp-content/uploads/2020/12/avatar-viet-tien-1.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">TTND.GS.TS NGUYỄN VIỆT TIẾN</h5>
-                            <p class="card-text">Bác sĩ cao cấp khoa Chấn thương chỉnh hình</p>
-                            <div class="group-button">
-                                <a href="#" class="button-blue">Xem chi tiết</a>
-                                <a href="" class="button-purple">Đặt lịch hẹn</a>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div class="hotro">
+        <div class="container">
+          <h1 class="text-center my-5">Các hình thức hỗ trợ</h1>
+          <div class="separator-purple"></div>
+          <img
+            class="bg"
+            src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/health-resource-background.svg"
+            alt=""
+          />
+          <div class="row" style="margin-top: 100px">
+            <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
+              <div class="card">
+                <img
+                  src="./assets/img/support-icon.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h4>Hỗ trợ đặt khám</h4>
+                  <p class="card-text">1900-1900</p>
                 </div>
+              </div>
             </div>
+            <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
+              <div class="card">
+                <img
+                  src="./assets/img/qrface.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h4>Facebook</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
+              <div class="card">
+                <img
+                  src="./assets/img/qr-zalo.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h4>Zalo</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
+              <div class="card">
+                <img
+                  src="./assets/img/qr-mess.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h4>Messenger</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="nhathuoc">
-            <div class="imgage-bg">
-                <img src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/online-pharmacy-video-cover.svg"
-                    alt="">
-            </div>
-            <div class="imgage-shipper">
-                <img src="./assets/img/shipper.png" alt="">
-            </div>
+      </div>
 
-            <div class="content">
-                <h2 class="my-3">Nhà Thuốc Trực Tuyến</h2>
-                <div class="thanhngang my-3"></div>
-                <p class="my-3">Dễ dàng đặt trực tuyến thuốc và các sản phẩm chăm sóc sức khỏe chính hãng với mức giá
-                    tiết kiệm</p>
-                <div class="row my-4">
-                    <div class="col">
-                        <img src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/icons/delivery-icon.svg"
-                            alt="">
-                        Giao hàng nhanh trong 2 giờ
-                    </div>
-                    <div class="col">
-                        <img src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/icons/discount-icon.svg"
-                            alt="">
-                        Tiết kiệm 20% tất cả các sản phẩm
-                    </div>
+      <div class="dangkytuvan">
+        <div class="container">
+          <div class="content-left">
+            <h1 class="text-center my-5">Đăng ký nhận tư vấn ngay bây giờ</h1>
+            <div class="col form">
+              <div class="form-row">
+                <div class="title-input">Tên đầy đủ</div>
+                <div class="row-right">
+                  <input type="text" />
                 </div>
-                <div style="display:flex ;justify-content: center;" class="my-5">
-                    <button class="button-green" style="width: 150px; height: 50px;">Xem ngay</button>
+              </div>
+              <div class="form-row">
+                <div class="title-input">Email</div>
+                <div class="row-right">
+                  <input type="text" />
                 </div>
-
+              </div>
+              <div class="form-row">
+                <div class="title-input">Số điện thoại</div>
+                <div class="row-right">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="title-input">Câu hỏi tư vấn</div>
+                <div class="row-right">
+                  <textarea cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="button">
+                <button class="button-purple">Đặt lịch ngay</button>
+              </div>
             </div>
-
+          </div>
+          <div class="col content-right">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661281397737-9b5d75b52beb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="trainghiem">
-            <div class="container">
-                <h1 class="text-center my-5">Trải nghiệm khách hàng</h1>
-                <div class="separator-purple"></div>
-                <div class="trainghiem-list">
-                    <div class="trainghiem__col">
-                        <div class="trainghiem__item">
-                            <div class="trainghiem__cont">
-                                <h3 class="trainghiem__name">Tôi đã chữa khỏi mỡ máu như thế nào?</h3>
-                                <p class="p1">anh Huy - GĐ công ty xây dựng</p>
-                                <p class="p2">Tôi là giám đốc, thường xuyên phải đi liên hoan với đối tác. Các bữa ăn có
-                                    rất nhiều thịt thà, đồ ăn giàu chất béo, lại còn phải uống…</p>
-                                <div class="iconLeft">
-                                    <i class="fa-solid fa-quote-left"></i>
-                                </div>
-                                <div class="iconRight">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="trainghiem__avatar"><img
-                                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/Khach-hang-phan-binh-1.jpg"
-                                    alt=""></div>
-                        </div>
-                    </div>
-                    <div class="trainghiem__col">
-                        <div class="trainghiem__item">
-                            <div class="trainghiem__cont">
-                                <h3 class="trainghiem__name">Việc chăm con đã trở nên dễ dàng hơn</h3>
-                                <p class="p1">chị Huyền - nội trợ</p>
-                                <p class="p2">Là một bà mẹ trẻ, tôi luôn lo lắng và muốn đảm bảo sức khỏe tốt nhất cho
-                                    bé sơ sinh của mình. Tuy nhiên, tôi gặp khá nhiều khó khăn...</p>
-                                <div class="iconLeft">
-                                    <i class="fa-solid fa-quote-left"></i>
-                                </div>
-                                <div class="iconRight">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="trainghiem__avatar"><img
-                                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-thanh-huyen-56-tuoi-1.jpg"
-                                    alt=""></div>
-                        </div>
-                    </div>
-                    <div class="trainghiem__col">
-                        <div class="trainghiem__item">
-                            <div class="trainghiem__cont">
-                                <h3 class="trainghiem__name">Căng thẳng mệt mỏi vì công việc đã giảm </h3>
-                                <p class="p1">anh Hùng - nhân viên văn phòng</p>
-                                <p class="p2">Tôi là giám đốc, thường xuyên phải đi liên hoan với đối tác. Các bữa ăn có
-                                    rất nhiều thịt thà, đồ ăn giàu chất béo, lại còn phải uống…</p>
-                                <div class="iconLeft">
-                                    <i class="fa-solid fa-quote-left"></i>
-                                </div>
-                                <div class="iconRight">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="trainghiem__avatar"><img
-                                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-hoang-nam-1.jpg"
-                                    alt=""></div>
-                        </div>
-                    </div>
-                    <div class="trainghiem__col">
-                        <div class="trainghiem__item">
-                            <div class="trainghiem__cont">
-                                <h3 class="trainghiem__name">Tìm ra giải pháp cho vấn đề tiểu đường</h3>
-                                <p class="p1">anh Minh - kĩ sư phần mềm </p>
-                                <p class="p2">Với công việc áp lực và lối sống không lành mạnh, tôi đã bị mắc bệnh tiểu
-                                    đường. Tôi đã tìm đến trang web tư vấn y tế và rất vui khi...</p>
-                                <div class="iconLeft">
-                                    <i class="fa-solid fa-quote-left"></i>
-                                </div>
-                                <div class="iconRight">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="trainghiem__avatar"><img
-                                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-tran-quang-65-tuoi-1.jpg"
-                                    alt=""></div>
-                        </div>
-                    </div>
-                    <div class="trainghiem__col">
-                        <div class="trainghiem__item">
-                            <div class="trainghiem__cont">
-                                <h3 class="trainghiem__name">Thông tin y tế chính xác và đáng tin cậy</h3>
-                                <p class="p1">anh Linh - sinh viên y khoa</p>
-                                <p class="p2">Là một sinh viên y khoa, việc tìm kiếm thông tin y tế chính xác và đáng
-                                    tin cậy là rất quan trọng đối với tôi. Trang web tư vấn y tế đã giúp tôi có được
-                                    những kiến...</p>
-                                <div class="iconLeft">
-                                    <i class="fa-solid fa-quote-left"></i>
-                                </div>
-                                <div class="iconRight">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="trainghiem__avatar"><img
-                                    src="https://www.mediplus.vn/wp-content/uploads/2021/05/khach-hang-hoang-nam-1.jpg"
-                                    alt=""></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="hotro">
-            <div class="container">
-                <h1 class="text-center my-5">Các hình thức hỗ trợ</h1>
-                <div class="separator-purple"></div>
-                <img class="bg"
-                    src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/health-resource-background.svg"
-                    alt="">
-                <div class="row" style="margin-top: 100px;">
-                    <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
-                        <div class="card">
-                            <img src="./assets/img/support-icon.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h4>Hỗ trợ đặt khám</h4>
-                                <p class="card-text">1900-1900</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
-                        <div class="card">
-                            <img src="./assets/img/qrface.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h4>Facebook </h4>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
-                        <div class="card">
-                            <img src="./assets/img/qr-zalo.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h4>Zalo</h4>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3 col-md-6 col-sm-8 mx-sm-auto">
-                        <div class="card">
-                            <img src="./assets/img/qr-mess.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h4>Messenger</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="dangkytuvan">
-            <div class="container">
-                <div class="content-left">
-                    <h1 class="text-center my-5">
-                        Đăng ký nhận tư vấn ngay bây giờ
-                    </h1>
-                    <div class="col form">
-                        <div class="form-row">
-                            <div class="title-input">
-                                Tên đầy đủ
-                            </div>
-                            <div class="row-right">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="title-input">
-                                Email
-                            </div>
-                            <div class="row-right">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="title-input">
-                                Số điện thoại
-                            </div>
-                            <div class="row-right">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="title-input">
-                                Câu hỏi tư vấn
-                            </div>
-                            <div class="row-right">
-                                <textarea cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <button class="button-purple">Đặt lịch ngay</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col content-right ">
-                    <img src="https://plus.unsplash.com/premium_photo-1661281397737-9b5d75b52beb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
-                        alt="">
-                </div>
-
-            </div>
-        </div>
+      </div>
     </main>
     <footer id="Footer" class="page-footer font-small stylish-color-dark pt-4">
-        <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <!-- Content -->
-                    <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">medical care</h5>
-                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p class="text-white">470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da Nang City,
-                        Vietnam</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS1:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS2:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS3:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS4:</a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Privacy Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Cookie Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Terms of use </a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 col-lg-3 col mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Contact Us</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p class="text-white">
-                        <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
-                    </p>
-                </div>
-            </div>
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <!-- Content -->
+            <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">
+              medical care
+            </h5>
+            <hr
+              class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p class="text-white">
+              470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da
+              Nang City, Vietnam
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS1:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS2:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS3:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS4:</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Cookie Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Shipping Rates</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Terms of use
+              </a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-4 col-lg-3 col mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">
+              Contact Us
+            </h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p class="text-white">
+              <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
+            </p>
+            <p class="text-white">
+              <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
+            </p>
+            <p class="text-white">
+              <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
+            </p>
+            <p class="text-white">
+              <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
+            </p>
+          </div>
         </div>
-        <hr>
-        <!-- Social buttons -->
-        <div class="hover-effect1">
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#." title="Github"><i class="fa fa-github"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-        </div>
+      </div>
+      <hr />
+      <!-- Social buttons -->
+      <div class="hover-effect1">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#." title="Github"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3"></div>
     </footer>
     <script src="./assets/js/nav-bar.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -31,12 +31,12 @@ function mylogin() {
     x.className = "iframe-dangnhap";
   }
 }
-function formhide(){
-  var x = document.getElementById('form-block');
+function formhide() {
+  var x = document.getElementById("form-block");
 
-  if(x.className === "form-none"){
-    x.className += " block-form" ;
-  }else {
+  if (x.className === "form-none") {
+    x.className += " block-form";
+  } else {
     x.className = "form-none";
   }
 }

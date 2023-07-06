@@ -1,451 +1,737 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Medical Care</title>
-    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4d0b4c932e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/dichvu.css">
-    <link rel="stylesheet" href="./vendor/responsive/dichvu_res.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/dichvu.css" />
+    <link rel="stylesheet" href="./vendor/responsive/dichvu_res.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+  </head> 
 
-</head>
-
-<body style="overflow-x: hidden;">
-    <header class="header ">
-        <div class="nav-bar">
-            <div class="logo">
-                <img src=".\assets\img\logo.png" alt="">
-            </div>
-            <div class="list-item" id="myTopnav">
-                <div class="item"><a href="index.html">Trang chủ</a> </div>
-                <div class="item"><a href="tintuc.html">Tin tức</a></div>
-                <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
-                <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
-                <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
-                <div class="item"><a href="dichvu.html" class="item-current">Dịch vụ</a></div>
-                <div class="item"><a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a></div>
-            </div>
-            <div class="nav-overlay" id="overlay">
-            </div>
-            <a href="javascript:void(0);" class="icon " onclick="narBar()">
-                <i class="fa-solid fa-bars "></i>
-            </a>
+  <body style="overflow-x: hidden">
+    <header class="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src=".\assets\img\logo.png" alt="" />
         </div>
+        <div class="list-item" id="myTopnav">
+          <div class="item"><a href="index.html">Trang chủ</a></div>
+          <div class="item"><a href="tintuc.html">Tin tức</a></div>
+          <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
+          <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
+          <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
+          <div class="item">
+            <a href="dichvu.html" class="item-current">Dịch vụ</a>
+          </div>
+          <div class="item">
+            <a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a>
+          </div>
+        </div>
+        <div class="nav-overlay" id="overlay"></div>
+        <a href="javascript:void(0);" class="icon" onclick="narBar()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
     </header>
     <iframe src="./dangki.html" class="form-none" id="form-block"></iframe>
     <div class="banner-care-service">
-        <div class="container-fluid ">
-            <!-- <div class="container"> -->
-            <div class="content row">
-                <div class="top-care-service-content">
-                    <div class="inner">
-                        <div class="doctor-list-title">
-                            <h1 class="title">
-                                Bạn thấy không khỏe?
-                                Hãy để <span class="text-nowrap">chúng tôi</span> chăm sóc <span class="text-nowrap">
-                                    cho bạn!</span></h1>
-                        </div>
-                    </div>
-                    <div class="px-200 my-3" style="width: 200px;">
-                        <button class="join-button button-custom">Đặt khám ngay</button>
-                    </div>
-                </div>
-                <div class=" content-img col-md-6 col-sm-8 col-xs-7">
-                </div>
+      <div class="container-fluid">
+        <!-- <div class="container"> -->
+        <div class="content row">
+          <div class="top-care-service-content">
+            <div class="inner">
+              <div class="doctor-list-title">
+                <h1 class="title">
+                  Bạn thấy không khỏe? Hãy để
+                  <span class="text-nowrap">chúng tôi</span> chăm sóc
+                  <span class="text-nowrap"> cho bạn!</span>
+                </h1>
+              </div>
             </div>
-
-            <!-- </div> -->
+            <div class="px-200 my-3" style="width: 200px">
+              <button class="join-button button-custom">Đặt khám ngay</button>
+            </div>
+          </div>
+          <div class="content-img col-md-6 col-sm-8 col-xs-7"></div>
         </div>
+
+        <!-- </div> -->
+      </div>
     </div>
     <div class="care-service-block">
-        <div class="care-service-block-bg">
-            <div class="container">
-                <div class="nav-links">
-                    <div class="choose-service-tab">
-                        <button class="service-tab">Dịch vụ Phòng khám</button>
-                        <button class="service-tab">Dịch vụ Tại nhà</button>
-                    </div>
-                    <div class="service-all-list">
-                        <div class="tab-pane">
-                            <div class="service-list-top">
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%); ">
-                                        <img src="assets/img/general_care.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Khám Tổng Quát</h3>
-                                        <span>Giá tư vấn chỉ từ</span>
-                                        <br>
-                                        <h4>400.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(223, 221, 249) 0%, rgb(248, 222, 217) 92.67%);">
-                                        <img src="assets/img/pediatrics.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Nhi Khoa</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(223, 221, 249) 0%, rgb(248, 222, 217) 92.67%);">
-                                        <img src="assets/img/vaccine_consultation.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Chủng Ngừa</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>400.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(247, 223, 218) 0%, rgb(238, 248, 217) 92.67%);">
-                                        <img src="assets/img/maternity.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Sản Phụ Khoa</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%);">
-                                        <img src="assets/img/gynecology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Sức Khoẻ Phụ Nữ</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(232, 241, 255) 0%, rgb(221, 217, 248) 92.67%);">
-                                        <img src="assets/img/dentistry.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Nha Khoa</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>400.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(223, 221, 249) 0%, rgb(248, 222, 217) 92.67%);">
-                                        <img src="assets/img/eye_care.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Nhãn Khoa</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>600.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(247, 223, 218) 0%, rgb(238, 248, 217) 92.67%);">
-                                        <img src="assets/img/annual_health_check_up.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Khám Sức Khoẻ <br> Định Kỳ</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>2.000.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%);">
-                                        <img src="assets/img/ear_nose_throat.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Tai Mũi Họng</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>450.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(232, 241, 255) 0%, rgb(221, 217, 248) 92.67%);">
-                                        <img src="assets/img/cardiology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Tim Mạch</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(223, 221, 249) 0%, rgb(248, 222, 217) 92.67%);">
-                                        <img src="assets/img/endocrinology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Nội Tiết</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(247, 223, 218) 0%, rgb(238, 248, 217) 92.67%);">
-                                        <img src="assets/img/nephrology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Thận & Tiết Niệu</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane">
-                            <div class="service-list-top">
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%);">
-                                        <img src="assets/img/gastroenterology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Tiêu Hoá</h3>
-                                        <span>Giá tư vấn chỉ từ</span>
-                                        <br>
-                                        <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(232, 241, 255) 0%, rgb(221, 217, 248) 92.67%);">
-                                        <img src="assets/img/pulmonology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Hô Hấp</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(223, 221, 249) 0%, rgb(248, 222, 217) 92.67%);">
-                                        <img src="assets/img/neurology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Thần Kinh</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>600.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(247, 223, 218) 0%, rgb(238, 248, 217) 92.67%);">
-                                        <img src="assets/img/dermatology.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Da Liễu</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%);">
-                                        <img src="assets/img/std_screening.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Tầm Kiểm Soát STD</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>2.200.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(232, 241, 255) 0%, rgb(221, 217, 248) 92.67%);">
-                                        <img src="assets/img/prc-service-icon.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Xét Nghiệm PCR <br>COVID-19</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>600.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(247, 223, 218) 0%, rgb(238, 248, 217) 92.67%);">
-                                        <img src="assets/img/home_nursing.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Điều Dưỡng Tại Nhà</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>500.000đ</h4>
-                                    </div>
-                                </div>
-                                <div class="card service-item">
-                                    <div class="card-img-top"
-                                        style=" border-radius: inherit; background-image: linear-gradient(97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67%);">
-                                        <img src="assets/img/genetic_cancer_screening.png" alt=""
-                                            style="display: block; max-width: 100%; height: auto;">
-                                    </div>
-                                    <div class="item-title">
-                                        <h3>Xét Nghiệm Gen <br>Ung Thư</h2>
-                                            <span>Giá tư vấn chỉ từ</span>
-                                            <br>
-                                            <h4>400.000đ</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+      <div class="care-service-block-bg">
+        <div class="container">
+          <div class="nav-links">
+            <div class="choose-service-tab">
+              <button class="service-tab">Dịch vụ Phòng khám</button>
+              <button class="service-tab">Dịch vụ Tại nhà</button>
             </div>
+            <div class="service-all-list">
+              <div class="tab-pane">
+                <div class="service-list-top">
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/general_care.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Khám Tổng Quát</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>400.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(223, 221, 249) 0%,
+                          rgb(248, 222, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/pediatrics.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Nhi Khoa</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(223, 221, 249) 0%,
+                          rgb(248, 222, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/vaccine_consultation.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Chủng Ngừa</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>400.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(247, 223, 218) 0%,
+                          rgb(238, 248, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/maternity.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Sản Phụ Khoa</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/gynecology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Sức Khoẻ Phụ Nữ</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(232, 241, 255) 0%,
+                          rgb(221, 217, 248) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/dentistry.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Nha Khoa</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>400.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(223, 221, 249) 0%,
+                          rgb(248, 222, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/eye_care.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Nhãn Khoa</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>600.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(247, 223, 218) 0%,
+                          rgb(238, 248, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/annual_health_check_up.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>
+                        Khám Sức Khoẻ <br />
+                        Định Kỳ
+                      </h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>2.000.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/ear_nose_throat.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Tai Mũi Họng</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>450.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(232, 241, 255) 0%,
+                          rgb(221, 217, 248) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/cardiology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Tim Mạch</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(223, 221, 249) 0%,
+                          rgb(248, 222, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/endocrinology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Nội Tiết</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(247, 223, 218) 0%,
+                          rgb(238, 248, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/nephrology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Thận & Tiết Niệu</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane">
+                <div class="service-list-top">
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/gastroenterology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Tiêu Hoá</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(232, 241, 255) 0%,
+                          rgb(221, 217, 248) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/pulmonology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Hô Hấp</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(223, 221, 249) 0%,
+                          rgb(248, 222, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/neurology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Thần Kinh</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>600.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(247, 223, 218) 0%,
+                          rgb(238, 248, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/dermatology.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Da Liễu</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/std_screening.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Tầm Kiểm Soát STD</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>2.200.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(232, 241, 255) 0%,
+                          rgb(221, 217, 248) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/prc-service-icon.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Xét Nghiệm PCR <br />COVID-19</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>600.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(247, 223, 218) 0%,
+                          rgb(238, 248, 217) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/home_nursing.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Điều Dưỡng Tại Nhà</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>500.000đ</h4>
+                    </div>
+                  </div>
+                  <div class="card service-item">
+                    <div
+                      class="card-img-top"
+                      style="
+                        border-radius: inherit;
+                        background-image: linear-gradient(
+                          97.97deg,
+                          rgb(224, 255, 249) 0%,
+                          rgb(214, 230, 255) 92.67%
+                        );
+                      "
+                    >
+                      <img
+                        src="assets/img/genetic_cancer_screening.png"
+                        alt=""
+                        style="display: block; max-width: 100%; height: auto"
+                      />
+                    </div>
+                    <div class="item-title">
+                      <h3>Xét Nghiệm Gen <br />Ung Thư</h3>
+                      <span>Giá tư vấn chỉ từ</span>
+                      <br />
+                      <h4>400.000đ</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer id="Footer" class="page-footer font-small stylish-color-dark pt-4">
-        <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <!-- Content -->
-                    <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">medical care</h5>
-                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p class="text-white">470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da Nang City,
-                        Vietnam</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS1:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS2:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS3:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS4:</a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Privacy Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Cookie Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Terms of use </a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Contact Us</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p class="text-white">
-                        <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
-                    </p>
-                </div>
-            </div>
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <!-- Content -->
+            <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">
+              medical care
+            </h5>
+            <hr
+              class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p class="text-white">
+              470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da
+              Nang City, Vietnam
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS1:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS2:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS3:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS4:</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Cookie Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Shipping Rates</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Terms of use
+              </a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">
+              Contact Us
+            </h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p class="text-white">
+              <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
+            </p>
+            <p class="text-white">
+              <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
+            </p>
+            <p class="text-white">
+              <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
+            </p>
+            <p class="text-white">
+              <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
+            </p>
+          </div>
         </div>
-        <hr>
-        <!-- Social buttons -->
-        <div class="hover-effect1">
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#." title="Github"><i class="fa fa-github"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-        </div>
+      </div>
+      <hr />
+      <!-- Social buttons -->
+      <div class="hover-effect1">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#." title="Github"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3"></div>
     </footer>
-    <script src="./assets/js/dichvu.js"> </script>
+    <script src="./assets/js/dichvu.js"></script>
     <script src="./assets/js/nav-bar.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
-</body>
-
+  </body>
 </html>
