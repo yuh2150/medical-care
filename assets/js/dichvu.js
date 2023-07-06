@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $('.nav-links').each(function () {
-    const navSlides = $(this).find('.choose-service-tab')
-    const contentSlides = $(this).find('.service-all-list')
+  $(".nav-links").each(function () {
+    const navSlides = $(this).find(".choose-service-tab");
+    const contentSlides = $(this).find(".service-all-list");
 
     contentSlides.slick({
       slidesToShow: 1,
@@ -10,7 +10,7 @@ $(document).ready(function () {
       dots: false,
       infinite: false,
       asNavFor: navSlides,
-      mobileFirst:true,
+      mobileFirst: true,
       // prevArrow:"<button type='button' class='slick-prev slide-arrow'><i class='fa-solid fa-angles-left' aria-hidden='true'></i></button>",
       // nextArrow:"<button type='button' class='slick-next slide-arrow'><i class='fa-solid fa-angles-right' aria-hidden='true'></i></button>"
     });
@@ -23,10 +23,8 @@ $(document).ready(function () {
       arrows: false,
       focusOnSelect: true,
     });
-    
   });
 });
-window.addEventListener('resize', function() {
-  $('.slick-slider').slick('refresh');
+window.addEventListener("resize", function () {
+  $(".slick-slider").slick("refresh");
 });
-

@@ -1,431 +1,558 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
     <title>Medical Care</title>
-    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4d0b4c932e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/style-tintuc.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./vendor/responsive/tintuc_res.css">
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style-tintuc.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./vendor/responsive/tintuc_res.css" />
+  </head>
 
-
-</head>
-
-<body style="overflow-x: hidden;">
-    <header class="header ">
-        <div class="nav-bar">
-            <div class="logo">
-                <img src=".\assets\img\logo.png" alt="">
-            </div>
-            <div class="list-item" id="myTopnav">
-                <div class="item"><a href="index.html">Trang chủ</a> </div>
-                <div class="item"><a href="tintuc.html" class="item-current">Tin tức</a></div>
-                <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
-                <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
-                <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
-                <div class="item"><a href="dichvu.html">Dịch vụ</a></div>
-                <div class="item"><a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a></div>
-            </div>
-            <div class="nav-overlay" id="overlay">
-            </div>
-            <a href="javascript:void(0);" class="icon " onclick="narBar()">
-                <i class="fa-solid fa-bars "></i>
-            </a>
+  <body style="overflow-x: hidden">
+    <header class="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src=".\assets\img\logo.png" alt="" />
         </div>
+        <div class="list-item" id="myTopnav">
+          <div class="item"><a href="index.html">Trang chủ</a></div>
+          <div class="item">
+            <a href="tintuc.html" class="item-current">Tin tức</a>
+          </div>
+          <div class="item"><a href="chuyenkhoa.html">Chuyên khoa</a></div>
+          <div class="item"><a href="chuyengia.html">Chuyên gia-Bác sĩ</a></div>
+          <div class="item"><a href="nhathuoc.html">Nhà thuốc</a></div>
+          <div class="item"><a href="dichvu.html">Dịch vụ</a></div>
+          <div class="item">
+            <a href="javascript:void(0);" onclick="formhide()">Đặt lịch</a>
+          </div>
+        </div>
+        <div class="nav-overlay" id="overlay"></div>
+        <a href="javascript:void(0);" class="icon" onclick="narBar()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
     </header>
-    <iframe src="./dangki.html" class="form-none" id="form-block" style="top: 80px;"></iframe>
+    <iframe
+      src="./dangki.html"
+      class="form-none"
+      id="form-block"
+      style="top: 80px"
+    ></iframe>
 
     <main>
-        <div class="tintuc">
-            <div class="container">
-                <div class="back-ground">
-                    <h1 class="text-center my-5">Tin tức</h1>
-                    <div class="separator-purple"></div>
-                    <div class="row">
-                        <!-- <div class="col-8"> -->
-                        <div class="tintuc-slide">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="https://ump.edu.vn/uploads/ckeditor/files/DSC01665.JPG" style="width:100%">
-                                <div class="text">Thứ trưởng Bộ Y tế Lê Đức Luận thăm và làm việc tại Đại học Y Dược
-                                    Thành phố Hồ Chí Minh</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="https://suckhoedoisong.qltns.mediacdn.vn/thumb_w/640/324455921873985536/2023/6/16/thu-truong-le-duc-luan-1-1686924119653590579289.jpg"
-                                    style="width:100%">
-                                <div class="text">Hội nghị hướng dẫn công tác truyền thông, cung cấp thông tin y tế và
-                                    triển khai Quy chế phát ngôn của Bộ Y tế</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="https://moh.gov.vn/documents/174521/1575342/62770957e7b236ec6fa3.jpg/855a6ec5-4f18-4584-804c-77ab3db23205?t=1687009820113"
-                                    style="width:100%">
-                                <div class="text">Hội thảo thực trạng quản lý mỹ phẩm và định hướng quản lý mỹ phẩm
-                                    trong thời gian tới</div>
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <br>
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                        <div class="tintuc-list">
-                            <div class="tintuc-item">
-                                <div class="tintuc-img">
-                                    <img src="assets\img\tintuc.jpg" alt="">
-                                </div>
-                                <div class="tintuc-text">
-                                    <div class="tieude">
-                                        Hà Nội: Gần 400 y, bác sĩ của 15 bệnh viện tổ chức khám sức khỏe cho người cao
-                                        tuổi
-                                    </div>
-                                    <div class="mota">
-                                        Ngày 15/5, gần 400 y bác sĩ của 15 bệnh viện tại Hà Nội đã khám sức khỏe và
-                                        triển khai chương trình quản lý
-                                    </div>
-
-                                </div>
-                                <!-- <div class="xemthem">
-                                        <div class="button-blue">Xem thêm >>></div> 
-                                    </div> -->
-                            </div>
-                            <div class="tintuc-item">
-                                <div class="tintuc-img">
-                                    <img src="https://img.daibieunhandan.vn/resize/800x800/Files/Images/2023/06/16/Quang-canh-Hoi-nghi-1686892804572.jpg"
-                                        alt="">
-                                </div>
-                                <div class="tintuc-text">
-                                    <div class="tieude">
-                                        Hội nghị Báo cáo viên Trung ương tháng 6
-                                    </div>
-                                    <div class="mota">
-                                        Sáng 16/6, tại Hà Nội, Ban Tuyên giáo Trung ương đã tổ chức Hội nghị Báo cáo
-                                        viên Trung ương tháng 6.2023 bằng hình thức trực tuyến,
-                                    </div>
-                                </div>
-                                <!-- <div class="xemthem">
-                                        <div class="button-blue">Xem thêm >>></div> 
-                                    </div> -->
-                            </div>
-                            <div class="tintuc-item">
-                                <div class="tintuc-img">
-                                    <img src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/6/14/img0584-1686739266038873483477.jpg"
-                                        alt="">
-                                </div>
-                                <div class="tintuc-text">
-                                    <div class="tieude">
-                                        Đẩy mạnh chuyển đổi số và chuyển đổi xanh, tạo đột phá rút ngắn quá trình công
-                                        nghiệp hóa, hiện đại hóa
-                                    </div>
-                                    <div class="mota">
-                                        Chiều 14/6, tại Hà Nội, Ủy viên Bộ Chính trị, Thủ tướng Chính phủ Phạm Minh
-                                        Chính đã tham dự, đồng chủ trì và có phát biểu chỉ đạo quan trọng
-                                    </div>
-                                </div>
-                                <!-- <div class="xemthem">
-                                        <div class="button-blue">Xem thêm >>></div> 
-                                    </div> -->
-                            </div>
-                            <div class="tintuc-item">
-                                <div class="tintuc-img">
-                                    <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/10/12/benh-tay-chan-mieng-16655432050011691794026.png"
-                                        alt="">
-                                </div>
-                                <div class="tintuc-text">
-                                    <div class="tieude">
-                                        Bộ Y tế yêu cầu tăng cường công tác phòng, chống dịch bệnh tay chân miệng
-                                    </div>
-                                    <div class="mota">
-                                        Bộ Y tế cho biết, theo hệ thống giám sát bệnh truyền nhiễm, từ đầu năm 2023 đến
-                                        nay cả nước ghi nhận 8.995 trường hợp mắc tay chân miệng, trong đó đã có 03
-                                        trường hợp tử vong.
-                                    </div>
-                                </div>
-                                <!-- <div class="xemthem">
-                                        <div class="button-blue">Xem thêm >>></div> 
-                                    </div> -->
-                            </div>
-
-                        </div>
-                        <!-- </div> -->
-                    </div>
+      <div class="tintuc">
+        <div class="container">
+          <div class="back-ground">
+            <h1 class="text-center my-5">Tin tức</h1>
+            <div class="separator-purple"></div>
+            <div class="row">
+              <!-- <div class="col-8"> -->
+              <div class="tintuc-slide">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img
+                    src="https://ump.edu.vn/uploads/ckeditor/files/DSC01665.JPG"
+                    style="width: 100%"
+                  />
+                  <div class="text">
+                    Thứ trưởng Bộ Y tế Lê Đức Luận thăm và làm việc tại Đại học
+                    Y Dược Thành phố Hồ Chí Minh
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="camnang">
-            <div class="wave-bg" style="margin-bottom: -108px;">
-                <img src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/doctor-profile/elite-care-bg.svg"
-                    width="100%">
-            </div>
-            <div class="back-ground">
-                <div class="container">
-                    <div class="row">
-                        <h1 class="text-center mb-5">Cẩm nang</h1>
-                        <div class="separator-purple"></div>
-                        <div class="camnang-slider">
-                            <div class="card mx-4" style="width: 18rem;">
-                                <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Da mặt bị ngứa sần sùi phải làm sao? 8 cách xử lý nhanh, an
-                                        toàn </h5>
-                                    <p class="card-text">Da mặt là vùng da liên quan đến thẩm mỹ, sự tự tin. Tuy nhiên,
-                                        khi da mặt bị ngứa sần sùi không chỉ ảnh hưởng đến thẩm mỹ, gây ngứa ngáy, khó
-                                        chịu mà còn là dấu hiệu của một số bệnh lý da liễu. Vậy da mặt bị ngứa sần sùi
-                                        phải làm sao?</p>
-                                    <a href="#" class="btn btn-primary">Đọc Thêm>></a>
-                                </div>
-                            </div>
-                            <div class="card mx-4" style="width: 18rem;">
-                                <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Trẻ em bị nôn liên tục phải làm sao? 10+ cách xử lý mẹ cần
-                                        biết</h5>
-                                    <p class="card-text">Trẻ em bị nôn liên tục phải làm sao?” là câu hỏi bố mẹ đặt ra
-                                        thường xuyên. Tùy thuộc vào bất thường khác kèm theo mà bố mẹ sẽ định hướng và
-                                        xử lý khác nhau.Hãy cùng Medical care tìm hiểu nguyên nhân, cách xử trí và
-                                        phòng ngừa trong bài viết dưới đây</p>
-                                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
-                                </div>
-                            </div>
-                            <div class="card mx-4" style="width: 18rem;">
-                                <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nổi mụn ở lưỡi: Nguyên nhân và cách điều trị</h5>
-                                    <p class="card-text">Lưỡi là một bộ phận quan trọng trong các hoạt động sống thường
-                                        ngày như: nói chuyện, ăn uống…. Vì thế, vết loét ở lưỡi hay mụn ở lưỡi sẽ gây
-                                        nhiều bất tiện và làm cho việc giao tiếp khó và ăn uống kém. Vậy tình trạng nổi
-                                        mụn ở lưỡi do nguyên nhân gì, là bệnh gì và có nguy hiểm không?...</p>
-                                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
-                                </div>
-                            </div>
-                            <div class="card mx-4" style="width: 18rem;">
-                                <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cách xử lý trẻ bị dị ứng nổi mẩn đỏ khắp người</h5>
-                                    <p class="card-text">Trẻ bị dị ứng nổi mẩn đỏ khắp người rất phổ biến ở trẻ sơ sinh
-                                        và trẻ em. Nhiều loại phát ban sẽ tự biến mất mà không cần điều trị, tuy nhiên,
-                                        nó có thể là biểu hiện của một trạng nguy hiểm.Cùng tìm hiểu nguyên nhân và cách
-                                        xử lí... </p>
-                                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
-                                </div>
-                            </div>
-                            <div class="card mx-4" style="width: 18rem;">
-                                <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">15+ cách trị mụn cóc ở tay (ngón tay) hiệu quả, an toàn</h5>
-                                    <p class="card-text">Mụn cóc xuất hiện ở tay, chân tại là tình trạng phổ biến trên
-                                        trẻ em và thanh thiếu niên với hơn 100 loại khác nhau. Các mụn cóc này tuy không
-                                        gây ảnh hưởng nghiêm trọng đến cơ thể, tuy nhiên ảnh hưởng xấu đến sức khỏe tinh
-                                        thần, khiến người bệnh tự ti. Vậy đâu là cách trị mụn cóc ở tay?...</p>
-                                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="camnang-list row">
-                        <div class=" col-10 col-xl-5 col-lg-6 col-md-8 col-sm-10  mx-3">
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://aivicare.net/storage/chup-x-quang-phat-hien-ung-thu-xuong-khong.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">23/11/2022</div>
-                                    <div class="tieude">Chụp X Quang có phát hiện ung thư xương không?</div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://aivicare.net/storage/cach-tri-tram-cam-1.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">22/11/2022</div>
-                                    <div class="tieude">Có cách nào trị trầm cảm tại nhà không?</div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://aivicare.net/storage/muc-do-tram-cam.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">22/11/2022</div>
-                                    <div class="tieude">Nhận biết các mức độ trầm cảm </div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-10 col-xl-5 col-lg-6 col-md-8 col-sm-10  mx-3">
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://aivicare.net/storage/roi-loan-nhan-cach-ranh-gioi-1.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">23/11/2022</div>
-                                    <div class="tieude">Thế nào là rối loạn nhân cách ranh giới?</div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://img.medlatec.vn/imagepath/imageslead/20230615/20230615_cac-chat-dinh-duong-2web_400.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">23/11/2022</div>
-                                    <div class="tieude">Tìm hiểu các chất dinh dưỡng quan trọng đối với cơ thể</div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="camnang-item my-5 ">
-                                <div class="camnang-image">
-                                    <img src="https://img.medlatec.vn/imagepath/imageslead/20230605/20230605_nhin-an-co-tac-hai-giweb_400.jpg
-                                    " alt="">
-                                </div>
-                                <div class="camnang-text">
-                                    <div class="tag">23/11/2022</div>
-                                    <div class="tieude">Thường xuyên nhịn ăn có tác hại gì với sức khỏe hay không?</div>
-                                    <div class="button">
-                                        <div class="button-blue">Xem chi tiết</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img
+                    src="https://suckhoedoisong.qltns.mediacdn.vn/thumb_w/640/324455921873985536/2023/6/16/thu-truong-le-duc-luan-1-1686924119653590579289.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">
+                    Hội nghị hướng dẫn công tác truyền thông, cung cấp thông tin
+                    y tế và triển khai Quy chế phát ngôn của Bộ Y tế
+                  </div>
                 </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img
+                    src="https://moh.gov.vn/documents/174521/1575342/62770957e7b236ec6fa3.jpg/855a6ec5-4f18-4584-804c-77ab3db23205?t=1687009820113"
+                    style="width: 100%"
+                  />
+                  <div class="text">
+                    Hội thảo thực trạng quản lý mỹ phẩm và định hướng quản lý mỹ
+                    phẩm trong thời gian tới
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <br />
+                <div style="text-align: center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+              <!-- </div> -->
+              <div class="tintuc-list">
+                <div class="tintuc-item">
+                  <div class="tintuc-img">
+                    <img src="assets\img\tintuc.jpg" alt="" />
+                  </div>
+                  <div class="tintuc-text">
+                    <div class="tieude">
+                      Hà Nội: Gần 400 y, bác sĩ của 15 bệnh viện tổ chức khám
+                      sức khỏe cho người cao tuổi
+                    </div>
+                    <div class="mota">
+                      Ngày 15/5, gần 400 y bác sĩ của 15 bệnh viện tại Hà Nội đã
+                      khám sức khỏe và triển khai chương trình quản lý
+                    </div>
+                  </div>
+                  <!-- <div class="xemthem">
+                                        <div class="button-blue">Xem thêm >>></div> 
+                                    </div> -->
+                </div>
+                <div class="tintuc-item">
+                  <div class="tintuc-img">
+                    <img
+                      src="https://img.daibieunhandan.vn/resize/800x800/Files/Images/2023/06/16/Quang-canh-Hoi-nghi-1686892804572.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="tintuc-text">
+                    <div class="tieude">
+                      Hội nghị Báo cáo viên Trung ương tháng 6
+                    </div>
+                    <div class="mota">
+                      Sáng 16/6, tại Hà Nội, Ban Tuyên giáo Trung ương đã tổ
+                      chức Hội nghị Báo cáo viên Trung ương tháng 6.2023 bằng
+                      hình thức trực tuyến,
+                    </div>
+                  </div>
+                  <!-- <div class="xemthem">
+                                        <div class="button-blue">Xem thêm >>></div> 
+                                    </div> -->
+                </div>
+                <div class="tintuc-item">
+                  <div class="tintuc-img">
+                    <img
+                      src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/6/14/img0584-1686739266038873483477.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="tintuc-text">
+                    <div class="tieude">
+                      Đẩy mạnh chuyển đổi số và chuyển đổi xanh, tạo đột phá rút
+                      ngắn quá trình công nghiệp hóa, hiện đại hóa
+                    </div>
+                    <div class="mota">
+                      Chiều 14/6, tại Hà Nội, Ủy viên Bộ Chính trị, Thủ tướng
+                      Chính phủ Phạm Minh Chính đã tham dự, đồng chủ trì và có
+                      phát biểu chỉ đạo quan trọng
+                    </div>
+                  </div>
+                  <!-- <div class="xemthem">
+                                        <div class="button-blue">Xem thêm >>></div> 
+                                    </div> -->
+                </div>
+                <div class="tintuc-item">
+                  <div class="tintuc-img">
+                    <img
+                      src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/10/12/benh-tay-chan-mieng-16655432050011691794026.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="tintuc-text">
+                    <div class="tieude">
+                      Bộ Y tế yêu cầu tăng cường công tác phòng, chống dịch bệnh
+                      tay chân miệng
+                    </div>
+                    <div class="mota">
+                      Bộ Y tế cho biết, theo hệ thống giám sát bệnh truyền
+                      nhiễm, từ đầu năm 2023 đến nay cả nước ghi nhận 8.995
+                      trường hợp mắc tay chân miệng, trong đó đã có 03 trường
+                      hợp tử vong.
+                    </div>
+                  </div>
+                  <!-- <div class="xemthem">
+                                        <div class="button-blue">Xem thêm >>></div> 
+                                    </div> -->
+                </div>
+              </div>
+              <!-- </div> -->
             </div>
+          </div>
         </div>
+      </div>
+      <div class="camnang">
+        <div class="wave-bg" style="margin-bottom: -108px">
+          <img
+            src="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/assets/images/doctor-profile/elite-care-bg.svg"
+            width="100%"
+          />
+        </div>
+        <div class="back-ground">
+          <div class="container">
+            <div class="row">
+              <h1 class="text-center mb-5">Cẩm nang</h1>
+              <div class="separator-purple"></div>
+              <div class="camnang-slider">
+                <div class="card mx-4" style="width: 18rem">
+                  <img src="" class="card-img-top" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Da mặt bị ngứa sần sùi phải làm sao? 8 cách xử lý nhanh,
+                      an toàn
+                    </h5>
+                    <p class="card-text">
+                      Da mặt là vùng da liên quan đến thẩm mỹ, sự tự tin. Tuy
+                      nhiên, khi da mặt bị ngứa sần sùi không chỉ ảnh hưởng đến
+                      thẩm mỹ, gây ngứa ngáy, khó chịu mà còn là dấu hiệu của
+                      một số bệnh lý da liễu. Vậy da mặt bị ngứa sần sùi phải
+                      làm sao?
+                    </p>
+                    <a href="#" class="btn btn-primary">Đọc Thêm>></a>
+                  </div>
+                </div>
+                <div class="card mx-4" style="width: 18rem">
+                  <img src="" class="card-img-top" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Trẻ em bị nôn liên tục phải làm sao? 10+ cách xử lý mẹ cần
+                      biết
+                    </h5>
+                    <p class="card-text">
+                      Trẻ em bị nôn liên tục phải làm sao?” là câu hỏi bố mẹ đặt
+                      ra thường xuyên. Tùy thuộc vào bất thường khác kèm theo mà
+                      bố mẹ sẽ định hướng và xử lý khác nhau.Hãy cùng Medical
+                      care tìm hiểu nguyên nhân, cách xử trí và phòng ngừa trong
+                      bài viết dưới đây
+                    </p>
+                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
+                  </div>
+                </div>
+                <div class="card mx-4" style="width: 18rem">
+                  <img src="" class="card-img-top" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Nổi mụn ở lưỡi: Nguyên nhân và cách điều trị
+                    </h5>
+                    <p class="card-text">
+                      Lưỡi là một bộ phận quan trọng trong các hoạt động sống
+                      thường ngày như: nói chuyện, ăn uống…. Vì thế, vết loét ở
+                      lưỡi hay mụn ở lưỡi sẽ gây nhiều bất tiện và làm cho việc
+                      giao tiếp khó và ăn uống kém. Vậy tình trạng nổi mụn ở
+                      lưỡi do nguyên nhân gì, là bệnh gì và có nguy hiểm
+                      không?...
+                    </p>
+                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
+                  </div>
+                </div>
+                <div class="card mx-4" style="width: 18rem">
+                  <img src="" class="card-img-top" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Cách xử lý trẻ bị dị ứng nổi mẩn đỏ khắp người
+                    </h5>
+                    <p class="card-text">
+                      Trẻ bị dị ứng nổi mẩn đỏ khắp người rất phổ biến ở trẻ sơ
+                      sinh và trẻ em. Nhiều loại phát ban sẽ tự biến mất mà
+                      không cần điều trị, tuy nhiên, nó có thể là biểu hiện của
+                      một trạng nguy hiểm.Cùng tìm hiểu nguyên nhân và cách xử
+                      lí...
+                    </p>
+                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
+                  </div>
+                </div>
+                <div class="card mx-4" style="width: 18rem">
+                  <img src="" class="card-img-top" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      15+ cách trị mụn cóc ở tay (ngón tay) hiệu quả, an toàn
+                    </h5>
+                    <p class="card-text">
+                      Mụn cóc xuất hiện ở tay, chân tại là tình trạng phổ biến
+                      trên trẻ em và thanh thiếu niên với hơn 100 loại khác
+                      nhau. Các mụn cóc này tuy không gây ảnh hưởng nghiêm trọng
+                      đến cơ thể, tuy nhiên ảnh hưởng xấu đến sức khỏe tinh
+                      thần, khiến người bệnh tự ti. Vậy đâu là cách trị mụn cóc
+                      ở tay?...
+                    </p>
+                    <a href="#" class="btn btn-primary">Đọc thêm>></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="camnang-list row">
+              <div class="col-10 col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-3">
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://aivicare.net/storage/chup-x-quang-phat-hien-ung-thu-xuong-khong.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">23/11/2022</div>
+                    <div class="tieude">
+                      Chụp X Quang có phát hiện ung thư xương không?
+                    </div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://aivicare.net/storage/cach-tri-tram-cam-1.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">22/11/2022</div>
+                    <div class="tieude">
+                      Có cách nào trị trầm cảm tại nhà không?
+                    </div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://aivicare.net/storage/muc-do-tram-cam.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">22/11/2022</div>
+                    <div class="tieude">Nhận biết các mức độ trầm cảm</div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-3">
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://aivicare.net/storage/roi-loan-nhan-cach-ranh-gioi-1.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">23/11/2022</div>
+                    <div class="tieude">
+                      Thế nào là rối loạn nhân cách ranh giới?
+                    </div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://img.medlatec.vn/imagepath/imageslead/20230615/20230615_cac-chat-dinh-duong-2web_400.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">23/11/2022</div>
+                    <div class="tieude">
+                      Tìm hiểu các chất dinh dưỡng quan trọng đối với cơ thể
+                    </div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="camnang-item my-5">
+                  <div class="camnang-image">
+                    <img
+                      src="https://img.medlatec.vn/imagepath/imageslead/20230605/20230605_nhin-an-co-tac-hai-giweb_400.jpg
+                                    "
+                      alt=""
+                    />
+                  </div>
+                  <div class="camnang-text">
+                    <div class="tag">23/11/2022</div>
+                    <div class="tieude">
+                      Thường xuyên nhịn ăn có tác hại gì với sức khỏe hay không?
+                    </div>
+                    <div class="button">
+                      <div class="button-blue">Xem chi tiết</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="Footer" class="page-footer font-small stylish-color-dark pt-4">
-        <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <!-- Content -->
-                    <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">medical care</h5>
-                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p class="text-white">470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da Nang City,
-                        Vietnam</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS1:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS2:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS3:</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">CS4:</a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Privacy Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Cookie Policy</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a class="text-decoration-none text-info" href="#!">Terms of use </a>
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase text-white font-weight-bold">Contact Us</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                    <p class="text-white">
-                        <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
-                    </p>
-                    <p class="text-white">
-                        <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
-                    </p>
-                </div>
-            </div>
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <!-- Content -->
+            <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">
+              medical care
+            </h5>
+            <hr
+              class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p class="text-white">
+              470 Tran Dai Nghia St.,University area, Ngu Hanh Son Dist., Da
+              Nang City, Vietnam
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Location</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 70px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS1:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS2:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS3:</a>
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!">CS4:</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">Policies</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Cookie Policy</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Shipping Rates</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-info" href="#!"
+                >Terms of use
+              </a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase text-white font-weight-bold">
+              Contact Us
+            </h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px"
+            />
+            <p class="text-white">
+              <i class="fas fa-home mr-3"></i> Da Nang city, Vietnam
+            </p>
+            <p class="text-white">
+              <i class="fas fa-envelope mr-3"></i> bwd@vku.udn.vn
+            </p>
+            <p class="text-white">
+              <i class="fas fa-phone mr-3"></i> + 84 12345 67xxx
+            </p>
+            <p class="text-white">
+              <i class="fas fa-print mr-3"></i> + 84 12345 67xxx
+            </p>
+          </div>
         </div>
-        <hr>
-        <!-- Social buttons -->
-        <div class="hover-effect1">
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#." title="Github"><i class="fa fa-github"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-        </div>
+      </div>
+      <hr />
+      <!-- Social buttons -->
+      <div class="hover-effect1">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#." title="Github"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3"></div>
     </footer>
     <script src="./assets/js/tintuc.js"></script>
     <script src="./assets/js/nav-bar.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
-</body>
-
+  </body>
 </html>
