@@ -2,12 +2,12 @@
   height: 50vh;
 }
 :root {
-  --blue-color-a: #3a7ff7 ;
-  --blue-color-b: #13dbfc ;
-  --purple-color : #8932df ;
-  --white-color : #ffffff;
-  --green-color :#1dcbb6 ;
-  --blue-color-c : #111c63 ; 
+  --blue-color-a: #3a7ff7;
+  --blue-color-b: #13dbfc;
+  --purple-color: #8932df;
+  --white-color: #ffffff;
+  --green-color: #1dcbb6;
+  --blue-color-c: #111c63;
 }
 .hover-effect1 {
   min-height: 20px;
@@ -74,8 +74,8 @@
 .hover-effect1 ul li a i {
   margin-top: 10px;
 }
-#Footer{
+#Footer {
   /* background-image: linear-gradient(to bottom left, rgba(76, 14, 100, 0.7), rgba(24, 14, 114, 0.7), rgba(116, 12, 93, 0.7));
    */
-   background-color:rgba(36,42,97,0.9);
+  background-color: rgba(36, 42, 97, 0.9);
 }
