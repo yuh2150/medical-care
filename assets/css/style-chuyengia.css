@@ -9,12 +9,12 @@ a {
   text-decoration: none;
   color: var(--blue-color-c);
 }
+.row__title a:hover {
+  color: #102e9e;
+}
 p {
   margin-top: 0;
   margin-bottom: 0;
-}
-a:hover {
-  color: #ffffff;
 }
 :root {
   --blue-color-a: #3a7ff7;
@@ -261,6 +261,7 @@ a:hover {
   text-decoration: none;
 }
 .info__small {
+  font-size: smaller;
   font-style: italic;
 }
 .info__decription {
