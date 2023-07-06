@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/dangnhap.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/dangnhap.css">
-</head> 
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Đăng kí</header>
+        <form action="#">
+          <input type="text" placeholder="Họ Tên" required />
+          <input type="text" placeholder="Tên tài khoản" required />
+          <input type="password" placeholder="Mật khẩu " required />
+          <input type="password" placeholder="Nhập lại mật khẩu " required />
+          <input type="email" placeholder="Email/SDT" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck"
+              >Tôi chấp nhận mọi điều khoản & dịch vụ</label
+            >
+          </div>
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
 
-<body>
-  <section class="wrapper">
-    <div class="form signup">
-      <header>Đăng kí</header>
-      <form action="#">
-        <input type="text" placeholder="Họ Tên" required />
-        <input type="text" placeholder="Tên tài khoản" required />
-        <input type="password" placeholder="Mật khẩu " required />
-        <input type="password" placeholder="Nhập lại mật khẩu " required />
-        <input type="email" placeholder="Email/SDT" required />
-        <div class="checkbox">
-          <input type="checkbox" id="signupCheck" />
-          <label for="signupCheck">Tôi chấp nhận mọi điều khoản & dịch vụ</label>
-        </div>
-        <input type="submit" value="Signup" />
-      </form>
-    </div>
+      <div class="form login">
+        <header>Đăng nhập</header>
+        <form action="#">
+          <input type="text" placeholder="Tên tài khoản" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <a href="#">Quên mật khẩu?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
 
-    <div class="form login">
-      <header>Đăng nhập</header>
-      <form action="#">
-        <input type="text" placeholder="Tên tài khoản" required />
-        <input type="password" placeholder="Mật khẩu" required />
-        <a href="#">Quên mật khẩu?</a>
-        <input type="submit" value="Login" />
-      </form>
-    </div>
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".signup header"),
+          loginHeader = document.querySelector(".login header");
 
-    <script>
-      const wrapper = document.querySelector(".wrapper"),
-        signupHeader = document.querySelector(".signup header"),
-        loginHeader = document.querySelector(".login header");
-
-      loginHeader.addEventListener("click", () => {
-        wrapper.classList.add("active");
-      });
-      signupHeader.addEventListener("click", () => {
-        wrapper.classList.remove("active");
-      });
-    </script>
-  </section>
-</body>
-
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
 </html>
